@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <style>
+        table,tr, th, td {
+            text-align: center;
+            border: 2px solid navy;
+            border-collapse: collapse;
+        }
+    </style>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Problema 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+    <h1>Problema 3</h1>
+
+    <form action="index.html" id="formulario" name="formulario" onsubmit="return addLine()" class="formulario">
+        <label for="pdate">Fecha:</label>
+        <input type="date" id="pdate" name="pdate">
+        <br><br>
+        <label for="pbebida">Tipo de Bebida:</label>
+        <input type="text" id="pbebida" name="pbebida">
+        <br><br>
+        <label for="pcantidad">Cantidad de vasos:</label>
+        <input type="number" id="pcantidad" name="pcantidad">
+        <br><br>
+        <input type="submit" value="Submit" >
+    </form>
+
+    <br><br>
+
+    <table style="width:50%" id="myTable">
+        <tr>
+          <th>fecha</th>
+          <th>bebida</th>
+          <th>cantidad</th>
+          <th>mensaje</th>
+        </tr>
+      </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
