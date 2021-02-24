@@ -1,12 +1,12 @@
 function addLine(){
-    var date = document.forms["formulario"]["pdate"].value;
-    var bebida = document.forms["formulario"]["pbebida"].value;
-    var cantidad = document.forms["formulario"]["pcantidad"].value;
+    var date = document.getElementById("pdate").value;
+    var bebida = document.getElementById("pbebida").value;
+    var cantidad = document.getElementById("pcantidad").value;
 
-    var th1 = document.createElement("th");
-    var th2 = document.createElement("th");
-    var th3 = document.createElement("th");
-    var th4 = document.createElement("th");
+    var td1 = document.createElement("td");
+    var td2 = document.createElement("td");
+    var td3 = document.createElement("td");
+    var td4 = document.createElement("td");
     var tr = document.createElement("tr");
 
     var message;
@@ -21,19 +21,19 @@ function addLine(){
     var cantidadText = document.createTextNode(cantidad.toString());
     var messageText = document.createTextNode(message);
     
-    th1.appendChild(dateText);
-    th2.appendChild(bebidaText);
-    th3.appendChild(cantidadText);
-    th4.appendChild(messageText);
+    td1.appendChild(dateText);
+    td2.appendChild(bebidaText);
+    td3.appendChild(cantidadText);
+    td4.appendChild(messageText);
     
     if (date.toString() === "" || bebida === "" || cantidad.toString() === "") {
         alert("Debe escribir una tarea!");
     } else {
 
-        tr.appendChild(th1);
-        tr.appendChild(th2);
-        tr.appendChild(th3);
-        tr.appendChild(th4);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
         
         document.getElementById("myTable").appendChild(tr);
     }
